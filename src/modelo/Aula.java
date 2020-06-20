@@ -15,6 +15,7 @@ public class Aula {
     private String lab;
     private Date dataHora;
     private Disciplina disciplina;
+    private String RA;
     private Map<String,Estudante> alunosAula;
 
     public String getLab() {
@@ -32,15 +33,18 @@ public class Aula {
     }
     
     public void addAluno(Estudante aluno){
-        
+      /* 2. Para cadastrar um aluno na aula, ele deve estar cadastrado na lista de alunos do curso;*/
+      AlunosCurso alCurso = new AlunosCurso();
+      alunosAula = alCurso.recuperarListaAlunos();
+      if(alunosAula.containsKey(aluno.getRA())){
+          alunosAula.put(aluno.getRA(), aluno);
+      }else{
+          System.out.println("Não foi possível cadastrar, aluno não existe na lista de alunos do curso.");
+      }
     }
     
     public Map<String,Estudante> getListaAlunos(){
-        Map<String,Estudante> mapEstudante = new HashMap<>();
-        Estudante aluno = new Estudante();
-        String estudante;
-        estudante = "Bruno";
-        return mapEstudante; 
+       return alunosAula; 
     }
     
     public Estudante getAluno(String RA){

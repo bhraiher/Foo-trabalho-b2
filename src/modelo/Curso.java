@@ -5,6 +5,7 @@
  */
 package modelo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,7 +14,7 @@ import java.util.List;
  */
 public class Curso {
     private String nomeCurso;
-    private List<Disciplina> disciplinas;
+    private List<Disciplina> disciplinas = new ArrayList();
 
     public String getNomeCurso() {
         return nomeCurso;

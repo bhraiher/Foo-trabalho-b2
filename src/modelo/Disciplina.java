@@ -31,12 +31,12 @@ public class Disciplina {
     
     public void setProfessor(Professor professor) {
         //1. Regra de negocio 1 de cadastro de disciplinas.
-        Colegiado col = new Colegiado();
-        if(professor.equals(col.recuperarProfessores()) ){
+       // Colegiado col = new Colegiado();
+        //if(professor.equals(col.recuperarProfessores()) ){
             this.professor = professor;
-        }else{
-            System.out.println("Impossivel cadastrar! Professor não cadastrado no colegiado.");
-        }
+       // }else{
+      //      System.out.println("Impossivel cadastrar! Professor não cadastrado no colegiado.");
+      //  }/*
     
     }
     public Professor getProfessor() {

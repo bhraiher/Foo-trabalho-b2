@@ -6,6 +6,7 @@
 package modelo;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,8 +15,8 @@ import java.util.List;
  */
 public class Colegiado {
     private Curso curso;
-    private List<Professor> professores;
-
+    private List<Professor> professores = new ArrayList();
+    
     public Curso getCurso() {
         return curso;
     }

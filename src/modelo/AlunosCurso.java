@@ -15,12 +15,15 @@ public class AlunosCurso {
     private Curso curso;
     private Map<String, Estudante> alunosCurso;
 
-    public Map<String, Estudante> getAlunosCurso() {
-        return alunosCurso;
+    public Curso getCurso() {
+        return curso;
     }
-    public void setAlunosCurso(Map<String, Estudante> alunosCurso) {
-        this.alunosCurso = alunosCurso;
+
+    public void setCurso(Curso curso) {
+        this.curso = curso;
     }
+
+
     
     
     public void inserirAluno(Estudante estudante){
