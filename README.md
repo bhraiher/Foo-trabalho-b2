@@ -2,7 +2,7 @@
 Trabalho_orientacao_segundo_bimestre
 
 
-Regras de negócio para os cadastros Cadastro da disciplina:
+*Regras de negócio para os cadastros Cadastro da disciplina:*
 
 ~~1. Para cadastrar um professor para a disciplina, o professor deve pertencer ao colegiado Cadastro da aula.~~
 * Implementado na classe Disciplina.
