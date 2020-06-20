@@ -9,7 +9,7 @@ Trabalho_orientacao_segundo_bimestre
 
 ~~2. Para cadastrar um aluno na aula, ele deve estar cadastrado na lista de alunos do curso.~~
 
- Implementado na classe Aula.
+* Implementado na classe Aula.
  
 3. Para cadastrar um aluno na aula, o operador deve fornecer o RA desse aluno.
 
