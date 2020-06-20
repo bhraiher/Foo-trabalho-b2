@@ -23,7 +23,7 @@ public class Curso {
     }
     
     public void inserirDisciplinas(Disciplina disciplina){
-        this.disciplinas = (List<Disciplina>) disciplina;
+        disciplinas.add(disciplina);
     }
     
     public List recuperarDisciplinas(){

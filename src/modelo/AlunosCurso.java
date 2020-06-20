@@ -27,9 +27,9 @@ public class AlunosCurso {
         alunosCurso.put(estudante.getRA(), estudante); 
     }
     
-    /*public Map<String,Estudante> recuperarListaAlunos(){
-        return Map<RA,alunosCurso>;
-    }*/
+    public Map<String,Estudante> recuperarListaAlunos(){ 
+        return alunosCurso;
+    }
     
    public Estudante recuperarAluno(String RA){
         return alunosCurso.get(RA);

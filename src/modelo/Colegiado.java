@@ -5,6 +5,7 @@
  */
 package modelo;
 
+
 import java.util.List;
 
 /**
@@ -23,7 +24,7 @@ public class Colegiado {
     }
     
     public void inserirProfessor(Professor professor){
-        
+        professores.add(professor);
     }
     
     public List recuperarProfessores(){
