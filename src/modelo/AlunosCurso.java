@@ -15,14 +15,6 @@ public class AlunosCurso {
     private Curso curso;
     private Map<String, Estudante> alunosCurso;
 
-    public Curso getCurso() {
-        return curso;
-    }
-
-    public void setCurso(Curso curso) {
-        this.curso = curso;
-    }
-
 
     
     
