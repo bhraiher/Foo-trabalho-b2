@@ -8,47 +8,51 @@ package modelo;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import static jdk.nashorn.internal.objects.NativeArray.map;
 
-
-public class Aula {
+/**
+ *
+ * @author Skyress
+ */
+public class Aula{
+    //Variáveis
     private String lab;
     private Date dataHora;
     private Disciplina disciplina;
-    private String RA;
     private Map<String,Estudante> alunosAula;
 
-    public String getLab() {
-        return lab;
-    }
-    public void setLab(String lab) {
-        this.lab = lab;
+
+    //Construtor Padrão
+    public void addAluno(Estudante aluno){
     }
 
-    public Date getDataHora() {
-        return dataHora;
-    }
-    public void setDataHora(Date dataHora) {
-        this.dataHora = dataHora;
-    }
-    
-    public void addAluno(Estudante aluno){
-      /* 2. Para cadastrar um aluno na aula, ele deve estar cadastrado na lista de alunos do curso;*/
-      AlunosCurso alCurso = new AlunosCurso();
-      alunosAula = alCurso.recuperarListaAlunos();
-      if(alunosAula.containsKey(aluno.getRA())){
-          alunosAula.put(aluno.getRA(), aluno);
-      }else{
-          System.out.println("Não foi possível cadastrar, aluno não existe na lista de alunos do curso.");
-      }
-    }
-    
+
+    //Get Lista Alunos
     public Map<String,Estudante> getListaAlunos(){
-       return alunosAula; 
+        Map<String,Estudante> mapEstudante = new HashMap<>();
+        Estudante aluno = new Estudante();
+        return mapEstudante;
     }
-    
+
+
+    //Get Aluno
     public Estudante getAluno(String RA){
         Estudante aluno = new Estudante();
         return aluno;
+    }
+
+
+    //Getters e Setters
+    public String getLab(){
+        return lab;
+    }
+    public void setLab(String lab){
+        this.lab = lab;
+    }
+
+    public Date getDataHora(){
+        return dataHora;
+    }
+    public void setDataHora(Date dataHora){
+        this.dataHora = dataHora;
     }
 }

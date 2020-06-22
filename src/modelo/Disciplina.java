@@ -7,41 +7,35 @@ package modelo;
 
 /**
  *
- * @author bruni
+ * @author Skyress
  */
-public class Disciplina {
+public class Disciplina{
+    //Variáveis
     private String nome;
     private int cargaHoraria;
     private Professor professor;
 
-    public String getNome() {
+ 
+    //Getters e Setters
+    public String getNome(){
         return nome;
     }
-    public void setNome(String nome) {
+    public void setNome(String nome){
         this.nome = nome;
     }
 
-    public int getCargaHoraria() {
+    public int getCargaHoraria(){
         return cargaHoraria;
     }
-    public void setCargaHoraria(int cargaHoraria) {
+    public void setCargaHoraria(int cargaHoraria){
         this.cargaHoraria = cargaHoraria;
     }
 
-    
-    public void setProfessor(Professor professor) {
-        //1. Regra de negocio 1 de cadastro de disciplinas.
-       // Colegiado col = new Colegiado();
-        //if(professor.equals(col.recuperarProfessores()) ){
-            this.professor = professor;
-       // }else{
-      //      System.out.println("Impossivel cadastrar! Professor não cadastrado no colegiado.");
-      //  }/*
-    
-    }
-    public Professor getProfessor() {
+    public Professor getProfessor(){
         return professor;
-    }   
-    
-    
+    }
+    public void setProfessor(Professor professor){
+        //Regra de negocio 1 de cadastro de disciplinas
+        this.professor = professor;
+    }
 }

@@ -10,27 +10,31 @@ import java.util.List;
 
 /**
  *
- * @author bruni
+ * @author Skyress
  */
-public class Curso {
+public class Curso{
+    //Variáveis
     private String nomeCurso;
     private List<Disciplina> disciplinas = new ArrayList();
 
-    public String getNomeCurso() {
-        return nomeCurso;
-    }
-    public void setNomeCurso(String nomeCurso) {
-        this.nomeCurso = nomeCurso;
-    }
-    
+
+    //Inserir disciplina
     public void inserirDisciplinas(Disciplina disciplina){
         disciplinas.add(disciplina);
     }
-    
-    public List recuperarDisciplinas(){
+
+
+    //Recuperar Disciplina
+    public List<Disciplina> recuperarDisciplinas(){
         return disciplinas;
     }
-    
-    
-    
+
+
+    //Getters e Setters
+    public String getNomeCurso(){
+        return nomeCurso;
+    }
+    public void setNomeCurso(String nomeCurso){
+        this.nomeCurso = nomeCurso;
+    }
 }

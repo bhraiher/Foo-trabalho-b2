@@ -8,18 +8,23 @@ package modelo;
 import java.util.Date;
 
 /**
- * Classe pronta. 
+ *
+ * @author Skyress
  */
-public class Professor extends Pessoa {
+public class Professor extends Pessoa{
+    //Variáveis
     private String nRegistro;
     private String titulacao;
     private float horasSemanais;
     private double precoHora;
-    
-    //Construtor vazio
-    public Professor(){    
+
+
+    //Construtor Padrão
+    public Professor(){
     }
-    //Construtor geral
+
+
+    //Construtor
     public Professor(String nRegistro, String titulacao, float horasSemanais, double precoHora, String nome, String CPF, Date dtNascimento){
         super(nome, CPF, dtNascimento);
         this.nRegistro = nRegistro;
@@ -28,37 +33,33 @@ public class Professor extends Pessoa {
         this.precoHora = precoHora;
     }
 
-    public String getNRegistro() {
+
+    //Getters e Setters
+    public String getNRegistro(){
         return nRegistro;
     }
-    public void setNRegistro(String nRegistro) {
+    public void setNRegistro(String nRegistro){
         this.nRegistro = nRegistro;
     }
 
-    
-    public String getTitulacao() {
+    public String getTitulacao(){
         return titulacao;
     }
-    public void setTitulacao(String titulacao) {
+    public void setTitulacao(String titulacao){
         this.titulacao = titulacao;
     }
 
-    
-    public float getHorasSemanais() {
+    public float getHorasSemanais(){
         return horasSemanais;
     }
-    public void setHorasSemanais(float horasSemanais) {
+    public void setHorasSemanais(float horasSemanais){
         this.horasSemanais = horasSemanais;
     }
 
-    
-    public double getPrecoHora() {
+    public double getPrecoHora(){
         return precoHora;
     }
-    public void setPrecoHora(double precoHora) {
+    public void setPrecoHora(double precoHora){
         this.precoHora = precoHora;
     }
-    
-    
-    
 }

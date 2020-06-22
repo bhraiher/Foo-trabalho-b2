@@ -5,30 +5,37 @@
  */
 package modelo;
 
-
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
- * @author bruni
+ * @author Skyress
  */
-public class Colegiado {
+public class Colegiado{
+    //Variáveis
     private Curso curso;
     private List<Professor> professores = new ArrayList();
-    
-    public Curso getCurso() {
-        return curso;
-    }
-    public void setCurso(Curso curso) {
-        this.curso = curso;
-    }
-    
+
+
+    //Inserir professor
     public void inserirProfessor(Professor professor){
         professores.add(professor);
     }
-    
-    public List recuperarProfessores(){
+
+
+    //Listra de Professores
+    public List<Professor> recuperarProfessores(){
         return professores;
+    }
+
+
+    //Getters e Setters
+    public Curso getCurso(){
+        return curso;
+    }
+    public void setCurso(Curso curso){
+        this.curso = curso;
     }
 }

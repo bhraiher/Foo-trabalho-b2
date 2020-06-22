@@ -9,26 +9,37 @@ import java.util.Map;
 
 /**
  *
- * @author bruni
+ * @author Skyress
  */
-public class AlunosCurso {
+public class AlunosCurso{
+    //Variáveis
     private Curso curso;
-    private Map<String, Estudante> alunosCurso;
+    private Map<String,Estudante> alunosCurso;
 
 
-    
-    
+    //Iserir aluno
     public void inserirAluno(Estudante estudante){
         alunosCurso.put(estudante.getRA(), estudante); 
     }
-    
-    public Map<String,Estudante> recuperarListaAlunos(){ 
-        return alunosCurso;
-    }
-    
-   public Estudante recuperarAluno(String RA){
+
+
+    //Recuperar Aluno
+    public Estudante recuperarAluno(String RA){
         return alunosCurso.get(RA);
     }
-    
-    
+
+
+    //Recuperar Lista Alunos
+    public Map<String,Estudante> recuperarListaAlunos(){
+        return alunosCurso;
+    }
+
+
+    //Getters e Setters
+    public Curso getCurso(){
+        return curso;
+    }
+    public void setCurso(Curso curso){
+        this.curso = curso;
+    }
 }
