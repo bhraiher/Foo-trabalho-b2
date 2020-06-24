@@ -5,16 +5,13 @@
  */
 package modelo;
 
+import java.util.HashMap;
 import java.util.Map;
 
-/**
- *
- * @author Skyress
- */
 public class AlunosCurso{
     //Variáveis
     private Curso curso;
-    private Map<String,Estudante> alunosCurso;
+    private Map<String,Estudante> alunosCurso = new HashMap<>();
 
 
     //Iserir aluno

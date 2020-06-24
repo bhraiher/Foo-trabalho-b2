@@ -9,16 +9,12 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- *
- * @author Skyress
- */
 public class Aula{
     //Variáveis
     private String lab;
     private Date dataHora;
     private Disciplina disciplina;
-    private Map<String,Estudante> alunosAula;
+    private Map<String,Estudante> alunosAula = new HashMap<>();
 
 
     //Construtor Padrão

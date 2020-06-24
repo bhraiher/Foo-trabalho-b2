@@ -5,18 +5,14 @@
  */
 package modelo;
 
-/**
- *
- * @author Skyress
- */
 public class Disciplina{
     //Variáveis
     private String nome;
     private int cargaHoraria;
     private Professor professor;
 
- 
-    //Getters e Setters
+
+//Getters e Setters
     public String getNome(){
         return nome;
     }
@@ -37,5 +33,19 @@ public class Disciplina{
     public void setProfessor(Professor professor){
         //Regra de negocio 1 de cadastro de disciplinas
         this.professor = professor;
+    }
+    
+        //Regra de negócio 01
+    /*Para cadastrar um professor para a disciplina, o professor deve pertencer ao colegiado*/
+    public void validaProfessor(String nome, int cargaHoraria, Professor professor){
+        Colegiado colegiado = new Colegiado();
+        if(colegiado.recuperarProfessores().contains(professor)){
+            Disciplina disciplina = new Disciplina();
+            disciplina.setNome(nome);
+            disciplina.setCargaHoraria(cargaHoraria);
+            disciplina.setProfessor(professor);
+        }else{
+            System.out.println("Falha no cadastro, Professor deve pertencer ao colegiado antes");
+        }
     }
 }

@@ -14,10 +14,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-/**
- *
- * @author Skyress
- */
 public class Pessoa{
     //Variáveis
     private String nome;

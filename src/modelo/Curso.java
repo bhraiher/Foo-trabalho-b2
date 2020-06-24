@@ -8,10 +8,7 @@ package modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Skyress
- */
+
 public class Curso{
     //Variáveis
     private String nomeCurso;

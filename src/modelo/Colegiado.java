@@ -9,10 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Skyress
- */
+
 public class Colegiado{
     //Variáveis
     private Curso curso;
