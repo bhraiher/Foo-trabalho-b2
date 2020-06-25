@@ -7,10 +7,6 @@ package modelo;
 
 import java.util.Date;
 
-/**
- *
- * @author Skyress
- */
 public class Estudante extends Pessoa{
     //Variáveis
     private String RA;

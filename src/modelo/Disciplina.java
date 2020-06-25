@@ -38,6 +38,9 @@ public class Disciplina{
         //Regra de negócio 01
     /*Para cadastrar um professor para a disciplina, o professor deve pertencer ao colegiado*/
     public void validaProfessor(String nome, int cargaHoraria, Professor professor){
+        
+        
+        
         Colegiado colegiado = new Colegiado();
         if(colegiado.recuperarProfessores().contains(professor)){
             Disciplina disciplina = new Disciplina();

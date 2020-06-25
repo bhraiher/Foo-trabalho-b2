@@ -12,10 +12,7 @@ import java.util.Date;
 import modelo.Estudante;
 import modelo.Pessoa;
 
-/**
- *
- * @author bruni
- */
+
 public class TesteIdade {
 
     /**
